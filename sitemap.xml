@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <!-- Homepage -->
   <url>
     <loc>https://royalgoaride.com/</loc>
@@ -15,36 +16,42 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/vehicle/creta-rental-goa.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/vehicle/ertiga-rental-goa.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/vehicle/fortuner-rental-goa.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/vehicle/i20-rental-goa.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/vehicle/innova-rental-goa.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/vehicle/luxury-car-rental-goa.html</loc>
     <lastmod>2026-07-23</lastmod>
@@ -52,114 +59,124 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Guild Pages (Travel Guides) -->
+  <url>
+    <loc>https://royalgoaride.com/vehicle/maruti-swift-rental-goa.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://royalgoaride.com/vehicle/maruti-brezza-rental-goa.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://royalgoaride.com/vehicle/kia-carens-rental-goa.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://royalgoaride.com/vehicle/mahindra-thar-rental-goa.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://royalgoaride.com/vehicle/audi-a3-rental-goa.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://royalgoaride.com/vehicle/mercedes-c300-rental-goa.html</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Guides -->
   <url>
     <loc>https://royalgoaride.com/guild/travel-guides.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/guild/tourist-places.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/guild/routes.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/guild/rental-policies.html</loc>
     <lastmod>2026-07-23</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- FAQ & Support -->
+  <!-- FAQ -->
   <url>
     <loc>https://royalgoaride.com/faq.html</loc>
     <lastmod>2026-07-23</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- Legal Pages -->
+  <!-- Legal -->
   <url>
     <loc>https://royalgoaride.com/privacy-policy.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
   <url>
     <loc>https://royalgoaride.com/terms-of-service.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
+  <!-- Location Pages -->
+  <url><loc>https://royalgoaride.com/location/north-goa-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/south-goa-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/panjim-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/calangute-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/candolim-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/baga-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/anjuna-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/vagator-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/morjim-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/margao-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/vasco-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://royalgoaride.com/location/goa-airport-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog Pages -->
+  <url><loc>https://royalgoaride.com/blog/best-beaches-in-goa.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/goa-travel-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/north-goa-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/south-goa-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/goa-nightlife.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/goa-food-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/goa-airport-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/self-drive-tips.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/driving-rules-india.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://royalgoaride.com/blog/best-time-visit-goa.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
 </urlset>
-<!-- Add these entries to sitemap.xml -->
-<url>
-    <loc>https://royalgoaride.com/vehicle/maruti-swift-rental-goa.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://royalgoaride.com/vehicle/maruti-brezza-rental-goa.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://royalgoaride.com/vehicle/kia-carens-rental-goa.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://royalgoaride.com/vehicle/mahindra-thar-rental-goa.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://royalgoaride.com/vehicle/audi-a3-rental-goa.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
-    <loc>https://royalgoaride.com/vehicle/mercedes-c300-rental-goa.html</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
-
-<!-- Location pages -->
-<url><loc>https://royalgoaride.com/location/north-goa-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/south-goa-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/panjim-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/calangute-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/candolim-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/baga-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/anjuna-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/vagator-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/morjim-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/margao-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/vasco-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://royalgoaride.com/location/goa-airport-car-rental.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
-<!-- Blog pages -->
-<url><loc>https://royalgoaride.com/blog/best-beaches-in-goa.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/goa-travel-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/north-goa-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/south-goa-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/goa-nightlife.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/goa-food-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/goa-airport-guide.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/self-drive-tips.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/driving-rules-india.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://royalgoaride.com/blog/best-time-visit-goa.html</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
