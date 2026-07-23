@@ -29,6 +29,61 @@
     <link rel="icon" type="image/webp" href="assets/logo.webp">
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="apple-touch-icon" href="assets/logo.png">
+        <!-- Structured Data: Organization, Website, LocalBusiness (improves AI visibility, non-visual) -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://royalgoaride.com/#organization",
+                    "name": "RoyalGoa Rentals",
+                    "url": "https://royalgoaride.com/",
+                    "logo": "https://royalgoaride.com/assets/logo.webp",
+                    "sameAs": ["https://www.facebook.com/","https://www.instagram.com/"]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://royalgoaride.com/#website",
+                    "url": "https://royalgoaride.com/",
+                    "name": "RoyalGoa Rentals",
+                    "publisher": { "@id": "https://royalgoaride.com/#organization" }
+                },
+                {
+                    "@type": "LocalBusiness",
+                    "@id": "https://royalgoaride.com/#localbusiness",
+                    "name": "RoyalGoa Rentals",
+                    "telephone": "+919975356697",
+                    "address": { "@type": "PostalAddress", "addressLocality": "Goa", "addressCountry": "IN" },
+                    "url": "https://royalgoaride.com/"
+                }
+            ]
+        }
+        </script>
+
+        <!-- GA4 placeholder (loads async, replace G-XXXXXXXXXX with real ID) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+        </script>
+                <!-- Breadcrumb structured data (non-visual) -->
+                <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://royalgoaride.com/"
+                        }
+                    ]
+                }
+                </script>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
