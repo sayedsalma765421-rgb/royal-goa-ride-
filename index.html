@@ -4,24 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium self-drive car and bike rentals in Goa. Luxury vehicles, affordable prices, professional 24/7 support. Book your rental now!">
+    <meta name="description" content="Self drive cars from ₹1,200/day in Goa. Airport & hotel delivery, WhatsApp booking, 15+ vehicles including Thar, Creta, Innova. Book now!">
     <meta name="keywords" content="car rental goa, bike rental goa, self drive, luxury cars, affordable rates, goa travel">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Royal Goa Rentals">
     <meta name="theme-color" content="#0D9488">
+    <meta name="geo.region" content="IN-GA">
     <link rel="canonical" href="https://royalgoaride.com/">
+    <link rel="preload" href="/assets/og-imag.webp" as="image" fetchpriority="high">
     
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="RoyalGoa Rentals | Premium Car & Bike Rental Goa">
-    <meta property="og:description" content="Premium self-drive car and bike rentals in Goa. Luxury vehicles, affordable prices, professional support.">
+    <meta property="og:title" content="Self Drive Car & Bike Rental in Goa | Royal Goa Ride">
+    <meta property="og:description" content="Self drive cars from ₹1,200/day in Goa. Airport & hotel delivery, WhatsApp booking, 15+ vehicles including Thar, Creta, Innova. Book now!">
     <meta property="og:image" content="https://royalgoaride.com/assets/og-imag.webp">
     <meta property="og:url" content="https://royalgoaride.com/">
     
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="RoyalGoa Rentals | Premium Car & Bike Rental Goa">
-    <meta name="twitter:description" content="Premium self-drive car and bike rentals in Goa. Luxury vehicles, affordable prices.">
+    <meta name="twitter:title" content="Self Drive Car & Bike Rental in Goa | Royal Goa Ride">
+    <meta name="twitter:description" content="Self drive cars from ₹1,200/day in Goa. Airport & hotel delivery, WhatsApp booking, 15+ vehicles including Thar, Creta, Innova. Book now!">
     <meta name="twitter:image" content="https://royalgoaride.com/assets/og-imag.webp">
     
     <!-- PWA Tags -->
@@ -29,34 +31,35 @@
     <link rel="icon" type="image/webp" href="assets/logo.webp">
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="apple-touch-icon" href="assets/logo.png">
-        <!-- Structured Data: Organization, Website, LocalBusiness (improves AI visibility, non-visual) -->
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "Organization",
-                    "@id": "https://royalgoaride.com/#organization",
-                    "name": "RoyalGoa Rentals",
-                    "url": "https://royalgoaride.com/",
-                    "logo": "https://royalgoaride.com/assets/logo.webp",
-                    "sameAs": ["https://www.facebook.com/","https://www.instagram.com/"]
-                },
-                {
-                    "@type": "WebSite",
-                    "@id": "https://royalgoaride.com/#website",
-                    "url": "https://royalgoaride.com/",
-                    "name": "RoyalGoa Rentals",
-                    "publisher": { "@id": "https://royalgoaride.com/#organization" }
-                },
-                {
-                    "@type": "LocalBusiness",
-                    "@id": "https://royalgoaride.com/#localbusiness",
-                    "name": "RoyalGoa Rentals",
-                    "telephone": "+919975356697",
-                    "address": { "@type": "PostalAddress", "addressLocality": "Goa", "addressCountry": "IN" },
-                    "url": "https://royalgoaride.com/"
-                }
+            "@type": "LocalBusiness",
+            "name": "Royal Goa Ride",
+            "url": "https://royalgoaride.com",
+            "telephone": "+919975356697",
+            "email": "bookingsroyalgoa@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Near Madgao Railway Station",
+                "addressLocality": "Margao",
+                "addressRegion": "Goa",
+                "postalCode": "403601",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 15.2736,
+                "longitude": 73.9564
+            },
+            "priceRange": "₹₹",
+            "openingHours": "Mo-Su 00:00-23:59",
+            "description": "Self-drive car and bike rentals in Goa. Airport and hotel delivery. WhatsApp booking.",
+            "sameAs": [
+                "https://facebook.com/",
+                "https://instagram.com/",
+                "https://twitter.com/",
+                "https://linkedin.com/"
             ]
         }
         </script>
@@ -91,7 +94,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     
-    <title>RoyalGoa Rentals | Premium Car & Bike Rental Goa</title>
+    <title>Self Drive Car & Bike Rental in Goa | Royal Goa Ride</title>
 </head>
 
 <body class="transition-colors duration-300">
@@ -108,7 +111,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2 cursor-pointer group" onclick="navigateTo('home')">
-                    <img src="assets/logo.png" alt="RoyalGoa logo" class="site-logo site-logo--navbar">
+                    <picture>
+                        <source srcset="assets/logo.webp" type="image/webp">
+                        <img src="assets/logo.png" alt="RoyalGoa logo" class="site-logo site-logo--navbar" width="40" height="40" loading="eager">
+                    </picture>
                 </div>
 
                 <div class="hidden md:flex items-center space-x-8">
@@ -127,7 +133,7 @@
                     <button onclick="navigateTo('contact')"
                         class="nav-link text-sm font-bold uppercase tracking-widest transition-colors text-slate-100 hover:text-primary"
                         data-page="contact">Contact</button>
-                    <button onclick="toggleDarkMode()" id="theme-toggle"
+                    <button onclick="toggleDarkMode()" id="theme-toggle" aria-label="Toggle color theme"
                         class="p-2 rounded-full bg-slate-900 transition-colors">
                         <svg class="w-5 h-5 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -142,14 +148,14 @@
                 </div>
 
                 <div class="md:hidden flex items-center space-x-4">
-                    <button onclick="toggleDarkMode()" id="theme-toggle-mobile">
+                    <button onclick="toggleDarkMode()" id="theme-toggle-mobile" aria-label="Toggle color theme">
                         <svg class="w-5 h-5 text-slate-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
                             </path>
                         </svg>
                     </button>
-                    <button onclick="toggleMobileMenu()" id="mobile-menu-btn">
+                    <button onclick="toggleMobileMenu()" id="mobile-menu-btn" aria-label="Open mobile menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16"></path>
@@ -183,7 +189,155 @@
     </nav>
 
     <!-- Main Content Container -->
-    <main id="main-content"></main>
+    <!-- Static content below is rendered instantly for search engines, social crawlers and
+         first paint; main.js replaces it with the interactive fleet/booking experience for
+         real visitors once it loads. -->
+    <main id="main-content">
+        <section class="hero-section">
+            <h1>Self Drive Car &amp; Bike Rental in Goa</h1>
+            <p>
+                Royal Goa Ride offers flexible self-drive car and bike rentals in Goa with airport pickup,
+                hotel delivery, and quick WhatsApp booking. Whether you want a compact hatchback for beach
+                hopping or a spacious SUV for family trips, we make it easy to start your journey without delays.
+            </p>
+            <div class="max-w-4xl mx-auto py-6">
+                <h2>Vehicle Types</h2>
+                <p>Choose from hatchbacks such as Swift and Baleno, sedans such as Dzire, and SUVs such as Creta, Thar, Innova, and Fortuner.</p>
+            </div>
+            <div class="max-w-4xl mx-auto py-6">
+                <h2>Service Areas</h2>
+                <p>We serve Margao, Panjim, Calangute, Baga, Anjuna, Colva, Dabolim Airport, and Mopa Airport with doorstep delivery and pickup.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="fleet-heading">
+            <h2 id="fleet-heading">Our Vehicle Fleet</h2>
+            <p>
+                Popular rentals include the Hyundai Creta, Maruti Swift, Maruti Baleno, Toyota
+                Innova Crysta, Mahindra Thar, Mercedes-Benz C300, Audi A3, and Honda Activa
+                scooters &mdash; available for daily, weekly and monthly hire.
+            </p>
+            <ul>
+                <li><a href="vehicle/creta-rental-goa.html">Hyundai Creta Rental in Goa</a></li>
+                <li><a href="vehicle/i20-rental-goa.html">Hyundai i20 Rental in Goa</a></li>
+                <li><a href="vehicle/baleno-rental-goa.html">Maruti Baleno Rental in Goa</a></li>
+                <li><a href="vehicle/maruti-swift-rental-goa.html">Maruti Swift Rental in Goa</a></li>
+                <li><a href="vehicle/innova-rental-goa.html">Toyota Innova Crysta Rental in Goa</a></li>
+                <li><a href="vehicle/fortuner-rental-goa.html">Toyota Fortuner Rental in Goa</a></li>
+                <li><a href="vehicle/luxury-car-rental-goa.html">Luxury Car Rental in Goa</a></li>
+                <li><a href="vehicle/mercedes-c300-rental-goa.html">Mercedes-Benz C300 Rental in Goa</a></li>
+                <li><a href="vehicle/audi-a3-rental-goa.html">Audi A3 Rental in Goa</a></li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="locations-heading">
+            <h2 id="locations-heading">Rental Pickup &amp; Delivery Locations in Goa</h2>
+            <p>We deliver and collect vehicles across all major Goa hubs, including:</p>
+            <ul>
+                <li><a href="location/goa-airport-car-rental.html">Goa Airport (Dabolim) Car Rental</a></li>
+                <li><a href="location/north-goa-car-rental.html">North Goa Car Rental</a></li>
+                <li><a href="location/south-goa-car-rental.html">South Goa Car Rental</a></li>
+                <li><a href="location/calangute-car-rental.html">Calangute Car Rental</a></li>
+                <li><a href="location/baga-car-rental.html">Baga Car Rental</a></li>
+                <li><a href="location/candolim-car-rental.html">Candolim Car Rental</a></li>
+                <li><a href="location/anjuna-car-rental.html">Anjuna Car Rental</a></li>
+                <li><a href="location/vagator-car-rental.html">Vagator Car Rental</a></li>
+                <li><a href="location/morjim-car-rental.html">Morjim Car Rental</a></li>
+                <li><a href="location/panjim-car-rental.html">Panjim Car Rental</a></li>
+                <li><a href="location/margao-car-rental.html">Margao Car Rental</a></li>
+                <li><a href="location/vasco-car-rental.html">Vasco Car Rental</a></li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="guides-heading">
+            <h2 id="guides-heading">Goa Travel Guides</h2>
+            <ul>
+                <li><a href="blog/goa-travel-guide.html">Goa Travel Guide</a></li>
+                <li><a href="blog/best-beaches-in-goa.html">Best Beaches in Goa</a></li>
+                <li><a href="blog/best-time-visit-goa.html">Best Time to Visit Goa</a></li>
+                <li><a href="blog/north-goa-guide.html">North Goa Guide</a></li>
+                <li><a href="blog/south-goa-guide.html">South Goa Guide</a></li>
+                <li><a href="blog/goa-airport-guide.html">Goa Airport Guide</a></li>
+                <li><a href="blog/driving-rules-india.html">Driving Rules in India</a></li>
+                <li><a href="blog/self-drive-tips.html">Self-Drive Tips for Goa</a></li>
+                <li><a href="blog/goa-food-guide.html">Goa Food Guide</a></li>
+                <li><a href="blog/goa-nightlife.html">Goa Nightlife Guide</a></li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="policies-heading">
+            <h2 id="policies-heading">Booking &amp; Support</h2>
+            <ul>
+                <li><a href="faq.html">Frequently Asked Questions</a></li>
+                <li><a href="guild/rental-policies.html">Rental Policies</a></li>
+                <li><a href="guild/routes.html">Popular Goa Routes</a></li>
+                <li><a href="guild/tourist-places.html">Top Tourist Places in Goa</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="tel:+919975356697">Call +91 99753 56697</a></li>
+                <li><a href="mailto:bookingsroyalgoa@gmail.com">Email Us</a></li>
+            </ul>
+        </section>
+    </main>
+
+        <!-- Expanded SEO Content Sections (non-visual content, keeps layout identical) -->
+        <section aria-labelledby="why-choose-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h2 id="why-choose-heading">Why Choose RoyalGoa Rentals</h2>
+            <p>RoyalGoa Rentals has built a reputation for dependable, transparent and friendly service across Goa. Our fleet is maintained to the highest standards, paperwork is kept simple and our local team is available 24/7 to assist with pickups, drops and roadside support. Whether you need a compact hatchback for city cruising, an SUV for hill roads, or a luxury car for special occasions, we match vehicles to your trip plan and budget.</p>
+            <p>We focus on clear pricing, contactless handovers, and optional add-ons like child seats, GPS, and extra driver coverage. Our booking flow prioritizes speed and clarity — most bookings are confirmed via WhatsApp within minutes.</p>
+        </section>
+
+        <section aria-labelledby="self-drive-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 id="self-drive-heading">Self Drive Cars</h2>
+            <p>Explore Goa with the comfort of your own schedule. Our self-drive cars include fuel-efficient hatchbacks, family-sized sedans, spacious MPVs and rugged SUVs suitable for Goa's varied terrain. Each car is cleaned, inspected and sanitised before every rental. We provide flexible rental durations (daily, weekly, monthly) and transparent fuel and insurance policies so you can plan confidently.</p>
+            <ul>
+                <li>Short trips: economical hatchbacks for city and beach drives</li>
+                <li>Family trips: 5–7 seater options with ample luggage space</li>
+                <li>Luxury & events: premium vehicles for weddings and corporate travel</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="bike-rental-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 id="bike-rental-heading">Bike Rental</h2>
+            <p>For nimble sightseeing and coastal cruising, our scooter and motorcycle rentals are perfect. Choose from reliable scooters for two riders or larger bikes for longer trips. All bikes come with helmets, basic tool kits, and clear fuel guidance. Ideal for solo travellers and couples who want to enjoy Goa’s beaches and café culture on two wheels.</p>
+        </section>
+
+        <section aria-labelledby="airport-pickup-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 id="airport-pickup-heading">Airport Pickup</h2>
+            <p>We offer punctual airport pickup at Dabolim (GOI) and Mopa with meet-and-greet service on request. Our drivers and staff monitor flight arrivals and coordinate with you for a smooth transfer. Complimentary luggage assistance and quick handovers help you start your Goa trip without delays.</p>
+        </section>
+
+        <section aria-labelledby="process-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 id="process-heading">Rental Process</h2>
+            <ol>
+                <li>Choose your vehicle from our fleet or request recommendations via WhatsApp.</li>
+                <li>Confirm dates and pickup location; pay the advance deposit to secure the booking.</li>
+                <li>Present your valid driving license and ID at pickup; inspect the vehicle together.</li>
+                <li>Enjoy your trip; contact our 24/7 support for any assistance.</li>
+                <li>Return the vehicle at the agreed location; deposits are refunded after inspection.</li>
+            </ol>
+            <p>We keep documentation minimal and provide clear invoices to help with expense claims and travel records.</p>
+        </section>
+
+        <section aria-labelledby="locations-extended" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 id="locations-extended">Popular Goa Locations</h2>
+            <p>Our most booked itineraries include the lively beaches of North Goa (Baga, Calangute, Anjuna), the heritage sights of Panjim, and the quieter beaches of South Goa. We also support day trips to Dudhsagar Falls, Spice Plantations, and the historical forts along the coast.</p>
+        </section>
+
+        <section aria-labelledby="safety-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 id="safety-heading">Safety & Support</h2>
+            <p>Your safety is our priority. All vehicles are insured and inspected regularly. We provide emergency roadside assistance, and our team can arrange replacements if a vehicle becomes unusable. For international travelers, we accept valid international driving permits with passport verification.</p>
+        </section>
+
+        <section aria-labelledby="reviews-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h2 id="reviews-heading">Customer Reviews</h2>
+            <p>Guests consistently praise our punctual pickups, clean vehicles and helpful customer service. See individual vehicle pages and our trip guides for real traveller stories and sample itineraries that highlight local experiences and recommendations.</p>
+        </section>
+
+        <section aria-labelledby="cta-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+            <h2 id="cta-heading">Ready to Book?</h2>
+            <p>Contact us on WhatsApp or call +91 99753 56697 to get an instant quote and confirm your dates. Our team will help you choose the right vehicle and ensure a smooth pickup.</p>
+            <p><a href="https://wa.me/919975356697" class="bg-primary text-white px-6 py-3 rounded-full inline-block mt-4">Book on WhatsApp</a></p>
+        </section>
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-300 pt-20 pb-10">
@@ -197,7 +351,10 @@
                                     d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
                             </svg>
                         </div>
-                        <img src="assets/logo.png" alt="RoyalGoa logo" class="site-logo site-logo--footer">
+                        <picture>
+                            <source srcset="assets/logo.webp" type="image/webp">
+                            <img src="assets/logo.png" alt="RoyalGoa logo" class="site-logo site-logo--footer" width="32" height="32" loading="lazy">
+                        </picture>
                     </div>
                     <p class="text-sm leading-relaxed mb-6">
                         Goa's elite vehicle rental service. Explore the emerald land with unmatched style, comfort, and
@@ -344,7 +501,7 @@
     </svg>
   </a>
 </div>
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 </body>
 
 </html>

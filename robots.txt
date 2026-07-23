@@ -1,26 +1,3 @@
-# Royal Goa Rentals - robots.txt
-# Allow all bots to crawl the website
-
 User-agent: *
 Allow: /
-
-# Disallow private/admin areas (if any)
-Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /.git/
-
-# Delay for aggressive crawlers
-User-agent: AhrefsBot
-Crawl-delay: 10
-
-User-agent: SemrushBot
-Crawl-delay: 10
-
-# Sitemap location
 Sitemap: https://royalgoaride.com/sitemap.xml
-
-# Allow crawling of static assets
-Allow: /assets/
-Allow: /css/
-Allow: /js/
