@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about car rental in Goa. Find answers to booking, payment, and rental policies.">
+    <meta name="keywords" content="faq, rental questions, car rental goa, bike rental goa">
+    <meta name="robots" content="index, follow">
+    <title>FAQ | Royal Goa Rentals</title>
+    <link rel="canonical" href="https://royalgoaride.com/faq.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <style>
+        .faq-page { background: var(--color-slate-50); }
+        body.dark-mode .faq-page { background: var(--color-slate-950); }
+        
+        .faq-hero {
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+            color: white;
+            padding: var(--space-20) 0;
+            text-align: center;
+            margin-bottom: var(--space-20);
+        }
+        
+        .faq-hero h1 {
+            color: white;
+            margin-bottom: var(--space-6);
+        }
+        
+        .faq-hero p {
+            font-size: var(--text-lg);
+            opacity: 0.95;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--space-4);
+        }
+        
+        .faq-item {
+            background: white;
+            border: 1px solid var(--color-slate-200);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-6);
+            overflow: hidden;
+        }
+        
+        body.dark-mode .faq-item {
+            background: var(--color-slate-800);
+            border-color: var(--color-slate-700);
+        }
+        
+        .faq-question {
+            padding: var(--space-6);
+            cursor: pointer;
+            font-weight: var(--font-weight-semibold);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: var(--text-base);
+            transition: all var(--transition-fast);
+        }
+        
+        body.dark-mode .faq-question {
+            background: var(--color-slate-800);
+            color: white;
+        }
+        
+        .faq-question:hover {
+            background: var(--color-slate-50);
+        }
+        
+        body.dark-mode .faq-question:hover {
+            background: var(--color-slate-700);
+        }
+        
+        .faq-toggle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: var(--color-primary-50);
+            border-radius: 50%;
+            color: var(--color-primary);
+            transition: transform var(--transition-fast);
+            flex-shrink: 0;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            display: none;
+            padding: 0 var(--space-6) var(--space-6);
+            color: var(--color-slate-600);
+            line-height: var(--line-height-relaxed);
+            border-top: 1px solid var(--color-slate-100);
+        }
+        
+        body.dark-mode .faq-answer {
+            color: var(--color-slate-400);
+            border-top-color: var(--color-slate-700);
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .faq-category {
+            margin-bottom: var(--space-12);
+        }
+        
+        .faq-category h3 {
+            color: var(--color-slate-900);
+            margin-bottom: var(--space-8);
+            padding-bottom: var(--space-4);
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        body.dark-mode .faq-category h3 {
+            color: white;
+        }
+    </style>
+</head>
+<body class="faq-page">
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo" aria-label="Royal Goa Rentals — Home">
+                <img src="assets/logo.webp" alt="Royal Goa Rentals logo" class="nav-logo-img" width="44" height="44">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-name">Royal Goa</span>
+                    <span class="nav-logo-tagline">Self Drive</span>
+                </div>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/#vehicles" class="nav-link">Vehicles</a>
+                <a href="guild/tourist-places.html" class="nav-link">Places</a>
+                <a href="faq.html" class="nav-link active" aria-current="page">FAQ</a>
+            </div>
+            <div class="nav-actions">
+                <a href="tel:+919975356697" class="nav-phone">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.68A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.91 7.86a16 16 0 0 0 6.09 6.09l1.27-.83a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    +91 99753 56697
+                </a>
+                <a href="https://wa.me/919975356697" class="nav-wa-btn" target="_blank" rel="noopener noreferrer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about our rental services</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container faq-container">
+            <!-- Booking & Reservations -->
+            <div class="faq-category">
+                <h3>Booking & Reservations</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>How do I book a vehicle?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can book a vehicle in three simple ways:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>Click "Book Now" on any vehicle page and fill the form</li>
+                            <li>WhatsApp us at +91 99753 56697 with your requirements</li>
+                            <li>Call us directly at +91 99753 56697</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What is the minimum rental duration?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The minimum rental duration is 24 hours. However, we offer flexible hourly bookings upon request for special cases. Contact us for more details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Can I book in advance?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We accept bookings up to 6 months in advance. Early booking gives you better rates and vehicle availability. A 25% advance deposit is required to confirm your booking.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing & Payment -->
+            <div class="faq-category">
+                <h3>Pricing & Payment</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What is included in the rental price?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The rental price includes:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>Vehicle hire charges</li>
+                            <li>Comprehensive insurance (for damage liability up to security deposit)</li>
+                            <li>24/7 roadside assistance</li>
+                            <li>Complimentary mobile phone charger</li>
+                            <li>Free hotel/airport pickup and drop</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What payment methods do you accept?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept multiple payment methods for your convenience:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>Credit/Debit Cards (Visa, Mastercard, Amex)</li>
+                            <li>Net Banking</li>
+                            <li>UPI (Google Pay, PhonePe, PayTM)</li>
+                            <li>Cash payment at pickup</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Is there a security deposit required?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, a security deposit is required at the time of rental. The amount varies by vehicle type (typically ₹3,000 to ₹10,000). This is refundable after the rental period, subject to vehicle condition inspection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Requirements & Documentation -->
+            <div class="faq-category">
+                <h3>Requirements & Documentation</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What documents do I need to rent a car?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You need to provide:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>Valid Driving License (with current address)</li>
+                            <li>Passport or Aadhar Card (for verification)</li>
+                            <li>Credit/Debit Card (for security deposit)</li>
+                            <li>Hotel address or contact details during rental period</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What is the minimum age requirement?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The minimum age to rent a vehicle is 21 years. Your driving license must have been valid for at least 1 year. Additional deposit may apply for drivers under 25 years.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Can international visitors rent vehicles?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! International visitors can rent vehicles with a valid International Driving Permit (IDP) or valid driving license in English. A passport is required for identification.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pickup & Drop-off -->
+            <div class="faq-category">
+                <h3>Pickup & Drop-off</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What are your pickup hours?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Standard pickup hours are 9:00 AM to 6:00 PM. However, we provide 24/7 on-demand pickup for airport arrivals and other emergencies. An additional charge of ₹500-1000 may apply for out-of-hours pickup.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Do you offer airport/hotel pickup and drop?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Free airport and hotel pickup/drop is included for all rentals within Goa. Our staff will meet you with a name board at the airport.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What is the late return policy?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Late returns are charged as follows:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>Up to 2 hours late: ₹500</li>
+                            <li>2-4 hours late: ₹1,000 + hourly charges</li>
+                            <li>Beyond 4 hours: Full day rental charges apply</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Driving & Insurance -->
+            <div class="faq-category">
+                <h3>Driving & Insurance</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What insurance coverage is provided?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All rentals include comprehensive insurance covering:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>Third-party liability protection</li>
+                            <li>Damage coverage (up to security deposit amount)</li>
+                            <li>Theft protection</li>
+                            <li>Personal accident insurance for driver</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Can I add an additional driver?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can add one additional driver for an extra charge of ₹300-500 per day. The additional driver must have a valid driving license and meet our age requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What should I do in case of an accident?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>In case of an accident:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>Call our 24/7 emergency number immediately</li>
+                            <li>Do not move the vehicle unless it's causing obstruction</li>
+                            <li>Take photos/videos of the damage and scene</li>
+                            <li>Get details of other vehicles/witnesses involved</li>
+                            <li>Contact local police if required</li>
+                            <li>Inform us within 24 hours</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fuel & Maintenance -->
+            <div class="faq-category">
+                <h3>Fuel & Maintenance</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Are the vehicles provided with full tank?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, all vehicles are provided with a full tank of fuel. You must return the vehicle with a full tank. If fuel is missing, you'll be charged at current market rates plus a 10% service charge.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What happens if the vehicle breaks down?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>If your rental vehicle breaks down, call us immediately. We provide 24/7 roadside assistance including:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>Free towing service</li>
+                            <li>Vehicle replacement if required</li>
+                            <li>No extra charges for mechanical breakdowns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Is routine maintenance covered?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, all routine maintenance is covered including oil changes, tire rotations, and filter replacements. We ensure all vehicles are well-maintained and serviced regularly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cancellation & Refunds -->
+            <div class="faq-category">
+                <h3>Cancellation & Refunds</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What is your cancellation policy?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our cancellation policy:</p>
+                        <ul style="margin-top: var(--space-3); margin-left: var(--space-6);">
+                            <li>7+ days before rental: Full refund</li>
+                            <li>3-7 days before: 50% refund</li>
+                            <li>1-3 days before: 25% refund</li>
+                            <li>Less than 24 hours: No refund</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>When will I get my security deposit back?</span>
+                        <span class="faq-toggle">›</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your security deposit will be refunded within 5-7 business days after return, subject to vehicle condition inspection. Any damages beyond normal wear and tear will be deducted from the deposit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions? -->
+            <div style="background: var(--color-slate-50); padding: var(--space-12); border-radius: var(--radius-xl); text-align: center; margin-top: var(--space-20); margin-bottom: var(--space-20);">
+                <h3 style="margin-bottom: var(--space-6);">Didn't find your answer?</h3>
+                <p style="margin-bottom: var(--space-8);">Get in touch with our support team. We're available 24/7 to help!</p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/919975356697" class="btn btn-primary" target="_blank">WhatsApp Us</a>
+                    <a href="tel:+919975356697" class="btn btn-secondary">Call Us</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: var(--color-slate-900); color: var(--color-slate-300); padding: var(--space-20) 0 var(--space-8); margin-top: var(--space-20);">
+        <div class="container">
+            <div style="text-align: center; font-size: var(--text-sm); color: var(--color-slate-500);">
+                © 2024 Royal Goa Rentals. All rights reserved. Professionalism on wheels ❤️
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919975356697" target="_blank" rel="noreferrer" style="position: fixed; bottom: var(--space-8); left: var(--space-8); z-index: 40; background: #25d366; color: white; padding: var(--space-4); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 8px 16px rgba(0,0,0,0.2); transition: all 0.3s;">
+        <svg style="width: 28px; height: 28px;" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    </a>
+
+<style>
+.royalgoa-floating-contact {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 9999;
+}
+.royalgoa-float-btn {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 9999px;
+  color: #ffffff;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+.royalgoa-float-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3);
+}
+.royalgoa-float-wa {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+.royalgoa-float-phone {
+  background: linear-gradient(135deg, #0EA5E9, #2563EB);
+}
+.royalgoa-float-btn svg {
+  width: 26px;
+  height: 26px;
+}
+@media (max-width: 640px) {
+  .royalgoa-floating-contact {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    gap: 0.6rem;
+  }
+  .royalgoa-float-btn {
+    width: 52px;
+    height: 52px;
+  }
+}
+</style>
+<div class="royalgoa-floating-contact" aria-label="Quick contact">
+  <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20vehicle%20in%20Goa" class="royalgoa-float-btn royalgoa-float-wa" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+    </svg>
+  </a>
+  <a href="tel:+919975356697" class="royalgoa-float-btn royalgoa-float-phone" aria-label="Call us now">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+    </svg>
+  </a>
+</div>
+
+</body>
+</html>
